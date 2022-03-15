@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_borde">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_fondo"
+        android:layout_margin="@dimen/marcoExterior"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvComprobar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teclea la fórmula"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/etCompuesto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textCapCharacters"/>
+
+        <Button
+            android:id="@+id/btnComprobar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="comprobar"
+            android:onClick="onClickBtn"/>
+
+        <TextView
+            android:id="@+id/tvContinuar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Desea continuar?"/>
+
+        <RadioGroup
+            android:id="@+id/rgContinuar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbSi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sí"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnContinuar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continuar"
+            android:onClick="onClickBtn"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_borde">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_fondo"
+        android:layout_margin="@dimen/marcoExterior"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre compuesto"/>
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etFormula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Fórmula"
+            android:inputType="textCapCharacters"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insertar compuesto"
+            android:onClick="onClickBtn"/>
+
+    </LinearLayout>
+
+</LinearLayout>

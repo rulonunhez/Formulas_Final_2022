@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Learn Chemistry</string>
+    <string name="error">Wrong!</string>
+    <string name="acierto">Right!</string>
+</resources>
